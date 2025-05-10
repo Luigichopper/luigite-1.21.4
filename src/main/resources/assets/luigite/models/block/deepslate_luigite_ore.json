@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "luigite:block/deepslate_luigite_ore"
+  }
+}

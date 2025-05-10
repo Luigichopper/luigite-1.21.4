@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "luigite",
+  "version": "1.5.0",
+
+  "name": "Luigite Mod",
+  "description": "Adds Luigite ore and Luigite gems to Minecraft!",
+  "authors": [
+    "Luigichopper"
+  ],
+  "contact": {
+    "homepage": "https://example.com/",
+    "sources": "https://github.com/yourusername/luigite-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/luigite/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.luigite.modid.LuigiteMod"
+    ],
+    "client": []
+  },
+  "mixins": [
+    "luigite.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

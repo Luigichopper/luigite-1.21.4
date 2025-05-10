@@ -1,0 +1,10 @@
+{
+  "item.luigite.luigite_gem": "Luigite Gem",
+  "item.luigite.luigite_ore": "Luigite Ore",
+  "item.luigite.deepslate_luigite_ore": "Deepslate Luigite Ore",
+
+  "block.luigite.luigite_ore": "Luigite Ore",
+  "block.luigite.deepslate_luigite_ore": "Deepslate Luigite Ore",
+  
+  "itemGroup.luigite.luigite_group": "Luigite"
+}
