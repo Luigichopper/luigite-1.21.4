@@ -19,8 +19,6 @@ Luigite Mod adds a new gemstone to Minecraft with a complete set of ore blocks, 
 - **Balanced Generation**: Generates with similar rarity to vanilla copper ore
 
 ## Screenshots
-
-*Screenshots coming soon*
 ![All Luigite Blocks](https://cdn.modrinth.com/data/pCf1Hyk5/images/10b93c98c98aa2381b571546bb0130b86c994713.png)
 ![Luigite Ore in a Cave](https://cdn.modrinth.com/data/pCf1Hyk5/images/5d3697378c6614dbee1a008c8b91c7c4f63a356c.png)
 
