@@ -8,7 +8,7 @@
 
 ## Overview
 
-Luigite Mod adds a new gemstone to Minecraft with a complete set of ore blocks, including both stone and deepslate variants. The mod features natural ore generation in the overworld with a rarity similar to copper, providing players with a new resource to discover during their mining expeditions.
+Luigite Mod adds a new gemstone to Minecraft with a complete set of ore blocks, including both stone and deepslate variants. The mod features natural ore generation in the overworld with a rarity similar to copper, providing players with a new edible resource to discover during their mining expeditions.
 
 ## Features
 
