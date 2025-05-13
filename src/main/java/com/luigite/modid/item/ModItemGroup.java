@@ -21,6 +21,7 @@ public class ModItemGroup {
                         // Add blocks to the item group
                         entries.add(ModBlocks.LUIGITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_LUIGITE_ORE);
+                        entries.add(ModBlocks.LUIGITE_BLOCK);
 
                         // Add items to the item group
                         entries.add(ModItems.LUIGITE_GEM);

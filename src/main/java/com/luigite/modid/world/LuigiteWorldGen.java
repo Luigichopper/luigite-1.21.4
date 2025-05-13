@@ -17,27 +17,37 @@ public class LuigiteWorldGen {
             Identifier.of(LuigiteMod.MOD_ID, "ore_luigite")
     );
 
-    public static final RegistryKey<PlacedFeature> LUIGITE_ORE_DEEPSLATE_PLACED_KEY = RegistryKey.of(
-            RegistryKeys.PLACED_FEATURE,
-            Identifier.of(LuigiteMod.MOD_ID, "ore_deepslate_luigite")
-    );
-
     public static void registerWorldGen() {
-        // Add our ores to the world generation
-        // Standard Luigite Ore - pass appropriate weight parameter as required in newer versions
-        BiomeModifications.addFeature(
-                BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES,
-                LUIGITE_ORE_PLACED_KEY
-        );
+        LuigiteMod.LOGGER.info("Starting registration of Luigite ore generation...");
 
-        // Deepslate variant
-        BiomeModifications.addFeature(
-                BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.UNDERGROUND_ORES,
-                LUIGITE_ORE_DEEPSLATE_PLACED_KEY
-        );
+        try {
+            // Standard Luigite Ore
+            LuigiteMod.LOGGER.info("Registering standard luigite ore generation with key: {}",
+                    LUIGITE_ORE_PLACED_KEY.getValue());
 
-        LuigiteMod.LOGGER.info("Registered world generation for Luigite Mod");
+            BiomeModifications.addFeature(
+                    BiomeSelectors.foundInOverworld(),
+                    GenerationStep.Feature.UNDERGROUND_ORES,
+                    LUIGITE_ORE_PLACED_KEY
+            );
+
+            LuigiteMod.LOGGER.info("Successfully registered world generation for Luigite Mod");
+        } catch (Exception e) {
+            LuigiteMod.LOGGER.error("Failed to register Luigite ore generation!", e);
+            e.printStackTrace();
+        }
+    }
+
+    // Helper method to verify if features exist in the registry
+    public static void verifyFeatureRegistration() {
+        // This should be called after the world is loaded
+        // For example, in a ServerStartingEvent or similar
+        try {
+            // You can add code here to check if your features are properly registered
+            LuigiteMod.LOGGER.info("Verifying Luigite ore features in registry...");
+            // This logging will help identify if the features are properly registered
+        } catch (Exception e) {
+            LuigiteMod.LOGGER.error("Error while verifying feature registration", e);
+        }
     }
 }

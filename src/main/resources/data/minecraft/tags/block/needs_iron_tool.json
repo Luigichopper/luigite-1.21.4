@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "luigite:luigite_ore",
-    "luigite:deepslate_luigite_ore"
+    "luigite:deepslate_luigite_ore",
+    "luigite:luigite_block"
   ]
 }

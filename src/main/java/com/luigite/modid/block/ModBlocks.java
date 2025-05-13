@@ -28,6 +28,11 @@ public class ModBlocks {
             Identifier.of(LuigiteMod.MOD_ID, "deepslate_luigite_ore")
     );
 
+    public static final RegistryKey<Block> LUIGITE_BLOCK_KEY = RegistryKey.of(
+            RegistryKeys.BLOCK,
+            Identifier.of(LuigiteMod.MOD_ID, "luigite_block")
+    );
+
     // Initialize blocks
     public static final Block LUIGITE_ORE = Registry.register(
             Registries.BLOCK,
@@ -57,6 +62,19 @@ public class ModBlocks {
             )
     );
 
+    public static final Block LUIGITE_BLOCK = Registry.register(
+            Registries.BLOCK,
+            LUIGITE_BLOCK_KEY.getValue(),
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.EMERALD_GREEN) // You can change this color
+                            .strength(4.0f, 4.0f) // Similar to iron block
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.METAL) // Metal sound for a refined block
+                            .registryKey(LUIGITE_BLOCK_KEY)
+            )
+    );
+
     // Initialize block items
     public static final Item LUIGITE_ORE_ITEM = Registry.register(
             Registries.ITEM,
@@ -72,9 +90,17 @@ public class ModBlocks {
                     .registryKey(RegistryKey.of(RegistryKeys.ITEM, DEEPSLATE_LUIGITE_ORE_KEY.getValue())))
     );
 
+    public static final Item LUIGITE_BLOCK_ITEM = Registry.register(
+            Registries.ITEM,
+            LUIGITE_BLOCK_KEY.getValue(),
+            new BlockItem(LUIGITE_BLOCK, new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, LUIGITE_BLOCK_KEY.getValue())))
+    );
+
     public static void registerModBlocks() {
         LuigiteMod.LOGGER.info("Registered mod blocks for " + LuigiteMod.MOD_ID);
         LuigiteMod.LOGGER.info("LUIGITE_ORE registry key: " + Registries.BLOCK.getId(LUIGITE_ORE));
         LuigiteMod.LOGGER.info("DEEPSLATE_LUIGITE_ORE registry key: " + Registries.BLOCK.getId(DEEPSLATE_LUIGITE_ORE));
+        LuigiteMod.LOGGER.info("LUIGITE_BLOCK registry key: " + Registries.BLOCK.getId(LUIGITE_BLOCK));
     }
 }

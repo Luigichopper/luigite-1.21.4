@@ -1,45 +1,27 @@
 {
-    "type": "minecraft:ore",
-    "config": {
-      "size": 3,
-      "discard_chance_on_air_exposure": 0.5,
-      "targets": [
-        {
-          "target": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:stone"
-          },
-          "state": {
-            "Name": "luigite:luigite_ore"
-          }
+  "type": "minecraft:ore",
+  "config": {
+    "size": 4,
+    "discard_chance_on_air_exposure": 0.0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         },
-        {
-          "target": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:granite"
-          },
-          "state": {
-            "Name": "luigite:luigite_ore"
-          }
-        },
-        {
-          "target": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:diorite"
-          },
-          "state": {
-            "Name": "luigite:luigite_ore"
-          }
-        },
-        {
-          "target": {
-            "predicate_type": "minecraft:block_match",
-            "block": "minecraft:andesite"
-          },
-          "state": {
-            "Name": "luigite:luigite_ore"
-          }
+        "state": {
+          "Name": "luigite:luigite_ore"
         }
-      ]
-    }
+      },
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
+        },
+        "state": {
+          "Name": "luigite:deepslate_luigite_ore"
+        }
+      }
+    ]
   }
+}
