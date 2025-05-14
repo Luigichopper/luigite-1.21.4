@@ -3,6 +3,7 @@ package com.luigite.modid;
 import com.luigite.modid.block.ModBlocks;
 import com.luigite.modid.item.ModItemGroup;
 import com.luigite.modid.item.ModItems;
+import com.luigite.modid.villager.ModTrades;
 import com.luigite.modid.world.LuigiteWorldGen;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -17,7 +18,9 @@ public class LuigiteMod implements ModInitializer {
         ModItemGroup.registerItemGroups();
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
+        ModTrades.registerCustomTrades();
         LuigiteWorldGen.registerWorldGen();
+
 
         LOGGER.info("Luigite Mod has been initialized!");
     }

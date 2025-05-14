@@ -41,6 +41,32 @@ public class ModItems {
             )
     );
 
+    // Luigite Apple with 9x longer speed effect (1800 ticks = 90 seconds)
+    private static final ConsumableComponent LUIGITE_APPLE_CONSUMABLE = ConsumableComponents.food()
+            .consumeEffect(
+                    new ApplyEffectsConsumeEffect(
+                            new StatusEffectInstance(StatusEffects.SPEED, 1800, 1),
+                            1.0f
+                    )
+            )
+            .build();
+
+    private static final FoodComponent LUIGITE_APPLE_FOOD = new FoodComponent.Builder()
+            .alwaysEdible()
+            .nutrition(6)  // Slightly more nutritious than the gem
+            .saturationModifier(1.5f)  // Better saturation too
+            .build();
+
+    public static final Item LUIGITE_APPLE = Registry.register(
+            Registries.ITEM,
+            Identifier.of(LuigiteMod.MOD_ID, "luigite_apple"),
+            new Item(new Item.Settings()
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM,
+                            Identifier.of(LuigiteMod.MOD_ID, "luigite_apple")))
+                    .food(LUIGITE_APPLE_FOOD, LUIGITE_APPLE_CONSUMABLE)
+            )
+    );
+
     public static void registerModItems() {
         LuigiteMod.LOGGER.info("Registering Mod Items for " + LuigiteMod.MOD_ID);
     }

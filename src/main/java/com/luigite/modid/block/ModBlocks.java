@@ -55,7 +55,7 @@ public class ModBlocks {
                     UniformIntProvider.create(3, 7),
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.DEEPSLATE_GRAY)
-                            .strength(4.5f, 3.0f)
+                            .strength(4.5f, 4.0f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.DEEPSLATE)
                             .registryKey(DEEPSLATE_LUIGITE_ORE_KEY)
@@ -68,7 +68,7 @@ public class ModBlocks {
             new Block(
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.EMERALD_GREEN) // You can change this color
-                            .strength(4.0f, 4.0f) // Similar to iron block
+                            .strength(5.0f, 6.0f) // Similar to iron block
                             .requiresTool()
                             .sounds(BlockSoundGroup.METAL) // Metal sound for a refined block
                             .registryKey(LUIGITE_BLOCK_KEY)

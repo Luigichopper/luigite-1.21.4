@@ -25,6 +25,7 @@ public class ModItemGroup {
 
                         // Add items to the item group
                         entries.add(ModItems.LUIGITE_GEM);
+                        entries.add(ModItems.LUIGITE_APPLE);
                     })
                     .build()
     );
