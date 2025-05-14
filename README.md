@@ -17,6 +17,8 @@ Luigite Mod adds a new gemstone to Minecraft with a complete set of ore blocks, 
 - **Luigite Gems**: Dropped when mining Luigite Ore
 - **Luigite Block**: A storage block crafted from 9 Luigite Gems
 - **Balanced Generation**: Generates with similar rarity to vanilla copper ore
+- Luigite Apple: Special food item that grants a Speed effect for 90 seconds (1800 ticks)
+- Villager Trades: Cleric villagers offer Luigite Gems and Luigite Apples at apprentice and journeyman levels
 
 ## Screenshots
 ![All Luigite Blocks](https://cdn.modrinth.com/data/pCf1Hyk5/images/10b93c98c98aa2381b571546bb0130b86c994713.png)
@@ -34,6 +36,9 @@ Luigite Mod adds a new gemstone to Minecraft with a complete set of ore blocks, 
 ### Luigite Block
 - Crafted by placing 9 Luigite Gems in a crafting table (3x3 pattern)
 - Can be uncrafted back into 9 Luigite Gems
+
+### Luigite Apple
+- Crafted by placing 8 Luigite Gems in a crafting table (similar recipe to the Golden Apple) with an Apple in the center
 
 ## Ore Generation
 
@@ -55,4 +60,4 @@ This project is licensed under the [Creative Commons CC0 1.0 Universal License](
 
 ## Credits
 
-Created with ❤️ for the Minecraft modding community.
+Created for the Minecraft modding community.
