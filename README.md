@@ -27,7 +27,7 @@ Luigite Mod adds a new gemstone to Minecraft with a complete set of ore blocks, 
 ## Installation
 
 1. Install [Fabric Loader](https://fabricmc.net/use/) and [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) for Minecraft 1.21.4
-2. Download the latest version of Luigite Mod from the [releases page](https://github.com/Luigichopper/luigite-mod/releases)
+2. Download the latest version of Luigite Mod from the [releases page](https://github.com/Luigichopper/luigite-1.21.4/releases)
 3. Place the downloaded JAR file in your Minecraft `mods` folder
 4. Launch Minecraft with the Fabric profile
 
