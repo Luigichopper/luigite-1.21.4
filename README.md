@@ -2,7 +2,7 @@
 
 ![Fabric API](https://img.shields.io/badge/Fabric-1.21.4-blue.svg?style=flat-square)
 ![License](https://img.shields.io/badge/License-CC0%201.0-brightgreen.svg?style=flat-square)
-![Version](https://img.shields.io/badge/Version-1.5.0-orange.svg?style=flat-square)
+![Version](https://img.shields.io/badge/Version-1.5.5-orange.svg?style=flat-square)
 
 > Adds Luigite ore and Luigite gems to Minecraft!
 
